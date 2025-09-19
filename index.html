@@ -1,94 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
 
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-
-    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/media.css" />
     <title>Daniels</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="landing">
-        <!-- ======================= Start nav bar section ======================= -->
+      <!-- ======================= Start nav bar section ======================= -->
 
-
-
-        <nav class="navbar navbar-expand-lg bg-transparent  pt-3">
-            <div class="container">
-                <a class="navbar-brand  text-white" href="#">Daniels</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link  text-white active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Clients</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-        <!-- ======================= End nav bar section ======================= -->
-        <!-- ======================= Start home bar section ======================= -->
-        <div class="home" id="home position-absolute">
-            <div class="container">
-
-            </div>
+      <nav class="navbar navbar-expand-lg bg-transparent pt-3">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#">Daniels</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white active"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+      <!-- ======================= End nav bar section ======================= -->
+      <!-- ======================= Start home bar section ======================= -->
+      <div
+        class="home d-flex justify-content-center align-items-center text-white vh-100"
+      >
+        <div class="container d-flex flex-column align-items-center">
+          <div class="title text-center">
+            <h1 class="display-2 fw-bold">Hello</h1>
+            <p class="display-2">
+              I Am <span class="typed" id="element"></span>
+            </p>
+          </div>
+          <div class="social-icons">
+            <a class="text-white" href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="text-white" href="">
+              <i class="fa-brands fa-square-twitter"></i>
+            </a>
+            <a class="text-white" href="">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="text-white" href="">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+            <a class="text-white" href="">
+              <i class="fa-brands fa-square-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- ======================= End home section ======================= -->
+    <!-- ======================= Start About section ======================= -->
+    <div id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="about-img">
+              <img
+                src="./imgs/hero.jpg"
+                alt="Jerry Daniels"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-7 mt-4 mt-md-0">
+            <div class="about-content">
+              <h2>About Me.</h2>
+              <p class="text-muted fw-bold">UI / UX DESIGNER & WEB DEVELOPER</p>
+              <p class="text-muted lh-lg">
+                I am Jerry Daniels, lorem ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a
+                type specimen book.
+              </p>
+              <div class="skills mt-5">
+                <div
+                  class="progress mb-4"
+                  role="progressbar"
+                  aria-label="Web Design"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 25px"
+                >
+                  <div class="progress-bar bg-dark" style="width: 95%">
+                    <span
+                      class="d-flex align-items-center justify-content-between p-2"
+                    >
+                      <span>Web Design</span>
+                      <span>95%</span>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="progress mb-4"
+                  role="progressbar"
+                  aria-label="Branding"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 25px"
+                >
+                  <div class="progress-bar bg-dark" style="width: 80%">
+                    <span
+                      class="d-flex align-items-center justify-content-between p-2"
+                    >
+                      <span>Branding</span>
+                      <span>80%</span>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="progress mb-4"
+                  role="progressbar"
+                  aria-label="Development"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 25px"
+                >
+                  <div class="progress-bar bg-dark" style="width: 90%">
+                    <span
+                      class="d-flex align-items-center justify-content-between p-2"
+                    >
+                      <span>Development</span>
+                      <span>90%</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons mt-4">
+                <button class="btn btn-dark px-4 py-2 me-2">Download CV</button>
+                <button class="btn btn-outline-dark px-4 py-2">
+                  Contact Me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- ======================= End home bar section ======================= -->
+    <!-- ======================= End About section ======================= -->
+    <!-- ======================= Start Services section ======================= -->
+    <div id="services" class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title">Services.</h2>
+        <div class="row mt-5">
+          <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow p-4">
+              <div class="icon-box mx-auto mb-3">
+                <i class="fas fa-laptop-code fa-2x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Web Design</h5>
+              <p class="card-text text-muted">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow p-4">
+              <div class="icon-box mx-auto mb-3">
+                <i class="fas fa-bullhorn fa-2x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Branding</h5>
+              <p class="card-text text-muted">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card border-0  border-0 shadow p-4">
+              <div class="icon-box mx-auto mb-3">
+                <i class="fas fa-umbrella fa-2x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Development</h5>
+              <p class="card-text text-muted">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card  border-0 shadow p-4">
+              <div class="icon-box mx-auto mb-3">
+                <i class="fas fa-gem fa-2x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Creative Design</h5>
+              <p class="card-text text-muted">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow p-4">
+              <div class="icon-box mx-auto mb-3">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Fully Responsive</h5>
+              <p class="card-text text-muted">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card  border-0 shadow p-4">
+              <div class="icon-box mx-auto mb-3">
+                <i class="fas fa-camera fa-2x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Retina Ready</h5>
+              <p class="card-text text-muted">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    
+    <!-- ======================= End Services section ======================= -->
 
-
-
-
-
-
-
-
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script>
-        var typed = new Typed("#element", {
-            strings: ["Photographer", "Designer", "Freelancer"],
-            typeSpeed: 50,
-            backSpeed: 40,
-            loop: true,
-            loopCount: Infinity,
-        });
+      var typed = new Typed("#element", {
+        strings: ["Larry Daniels", "Designer", "Developer"],
+        typeSpeed: 50,
+        backSpeed: 40,
+        loop: true,
+        loopCount: Infinity,
+      });
     </script>
-</body>
-
+  </body>
 </html>

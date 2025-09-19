@@ -1,8 +1,89 @@
-.landing{
-    background-image:linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(./../imgs/bg.jpg) ;
-    height: 100vh;
-        background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+.landing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./../imgs/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2rem;
 }
 
+/* ==================================== */
+
+.about-img {
+  position: relative;
+  padding: 0 0 0 30px;
+}
+
+.about-img::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 0;
+  bottom: -30px;
+  background-image: radial-gradient(#d3d3d3 1px, transparent 1px);
+  background-size: 15px 15px;
+  z-index: -1;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.about-content p.text-muted {
+  font-size: 0.9rem;
+}
+
+.progress {
+  border: 1px solid #eee;
+}
+
+.btn.btn-dark:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ============================== */
+
+#services {
+  background: #f7f7f7;
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.icon-box {
+  background-color: #f7f7f7;
+  color: #333;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card:hover .icon-box {
+  background-color: #000;
+  color: #fff;
+}
