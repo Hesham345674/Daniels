@@ -6,6 +6,10 @@
 .home .container h1{
     font-size: 4.5rem;
 }
+.portfolio  .container .row .col-sm-12{
+    width: 100%;
+}
+
 }
 
 
@@ -15,7 +19,7 @@
 @media (min-width: 768px) {
 
 
-.portofolio .container .row .col-sm-12{
+.portfolio  .container .row .col-sm-12{
     width: 50%;
 }
 
@@ -39,7 +43,7 @@
 
 @media (min-width: 992px) {
 
-.portofolio .container .row .col-sm-12{
+.portfolio .container .row .col-sm-12{
     width: 33%;
 }
 
