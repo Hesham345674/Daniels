@@ -3,7 +3,9 @@
 #team .container .row .col-sm-12{
     width: 100%;
 }
-
+.home .container h1{
+    font-size: 4.5rem;
+}
 }
 
 
@@ -24,6 +26,9 @@
 
 #team .container .row .col-sm-12{
     width: 50%;
+}
+.home .container h1{
+    font-size: 4.5rem;
 }
 
 }
@@ -46,7 +51,9 @@
 #team .container .row .col-sm-12{
     width: 33%;
 }
-
+.home .container h1{
+    font-size: 4.5rem;
+}
 }
 
 
